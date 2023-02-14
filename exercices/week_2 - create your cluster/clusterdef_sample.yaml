@@ -1,0 +1,27 @@
+---
+hetzner_token: <YOUR_HETZNER_TOKEN>
+cluster_name: skynet
+kubeconfig_path: "kubeconfig.yaml"
+k3s_version: v1.23.16+k3s1
+public_ssh_key_path: "~/.ssh/id_rsa.pub" # note: you'll need to have access to this ssh key if you want to edit the cluster
+private_ssh_key_path: "~/.ssh/id_rsa"
+use_ssh_agent: false
+ssh_allowed_networks:
+  - 0.0.0.0/0
+api_allowed_networks:
+  - 0.0.0.0/0
+schedule_workloads_on_masters: true
+masters_pool:
+  instance_type: cpx21
+  instance_count: 1
+  location: hel1
+worker_node_pools:
+  - name: small
+    instance_type: cpx21
+    instance_count: 0
+    location: hel1
+    autoscaling:
+      enabled: true
+      min_instances: 0
+      max_instances: 3
+enable_encryption: true # enable WireGuard to make sure that your nodes communicate securely.

@@ -4,9 +4,21 @@ The k8s bootcamp for hackers - master k8s through hands-on exercices.
 
 ## Program
 
-| Week | Exercice                                              |
-| ---- | ----------------------------------------------------- |
-| 1    | [Commit your soul to Kubernetes](exercices/week_1.md) |
+| Week | Exercice                                                                       |
+| ---- | ------------------------------------------------------------------------------ |
+| 1    | [Commit your soul to Kubernetes](exercices/week_1%20-%20commit%20your%20soul/) |
+| 2    | [Create your cluster](exercices/week_2%20-%20create%20your%20cluster/)         |
+| 3    | Deploy your first app (WIP)                                                    |
+
+## Course's scope
+
+At the end of the course, you should be a _hacker with k8s skillz_.
+
+What does this means?
+
+1. You should be able to create a k8s cluster on Hetzner
+2. You should be able to add CI/CD to any project
+3. You should have a good grasp of the basics of Observability (Grafana, Prometheus)
 
 ## Target audience
 
